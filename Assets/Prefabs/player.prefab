@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 4502772419400618}
   - component: {fileID: 114922807768422224}
   - component: {fileID: 114685942034443638}
+  - component: {fileID: 114664366009908464}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -205,6 +206,17 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1643527414359564}
   m_Enabled: 1
+--- !u!114 &114664366009908464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1994015258592368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798589d6b80cb3c4f9e34717ad9f2a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114685942034443638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,12 +228,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7201c2889dd70424394ee52f81051bec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  blocksAhead: 10
+  speed: 30
+  blocksAhead: 20
   blocksToSpawn:
   - {fileID: 1149460071717716, guid: facbc883a6f19e245ad3648cefcfb577, type: 2}
   - {fileID: 1217974944091464, guid: ad2b090be123f1b4fbd76587a1352bbe, type: 2}
   - {fileID: 1648478348101768, guid: 1c2f66b3ead0b084aad93220ea32bbe8, type: 2}
+  - {fileID: 1149460071717716, guid: facbc883a6f19e245ad3648cefcfb577, type: 2}
+  mapContainerTransform: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &114922807768422224
 MonoBehaviour:
   m_ObjectHideFlags: 1

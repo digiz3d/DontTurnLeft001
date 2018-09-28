@@ -14,6 +14,7 @@ public class SwipeDetection : MonoBehaviour {
 
     private float lastTouch = 0f;
 
+
 	// Use this for initialization
 	void Start () {
         Application.targetFrameRate = 60;
@@ -63,4 +64,9 @@ public class SwipeDetection : MonoBehaviour {
         }
 		
 	}
+
+    void SetXPos(float x)
+    {
+        transform.localPosition = new Vector3(x, 0, 0);
+    }
 }

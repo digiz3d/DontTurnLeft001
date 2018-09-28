@@ -38,18 +38,14 @@ public class BlockScript : MonoBehaviour
             Gizmos.color = Color.blue;
             Gizmos.DrawSphere(transform.position + v + Vector3.up, 0.1f);
             Gizmos.color = Color.red;
-
-
+            
             Vector3 pivot = transform.position + v + Vector3.up;
             Vector3 point = transform.position + v + Vector3.up + Vector3.forward * 0.2f;
-
             Vector3 newDirection = Quaternion.Euler(new Vector3(0f, temp.y, 0f)) * (point - pivot) + pivot;
 
             Gizmos.DrawLine(pivot, newDirection);
             Gizmos.color = Color.blue;
             Gizmos.DrawSphere(newDirection, 0.05f);
-
-            // Vector3.up + 
         }
     }
 
@@ -61,5 +57,10 @@ public class BlockScript : MonoBehaviour
     public Vector3 GetStartPosition()
     {
         return startPosition;
+    }
+
+    public Vector3[] GetTracksPositions()
+    {
+        return tracksPositions;
     }
 }
